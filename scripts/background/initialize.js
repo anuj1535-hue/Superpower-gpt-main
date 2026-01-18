@@ -31,12 +31,18 @@ let saveTimeout = null;
 // ==========================================
 
 async function initDB() {
-  const data = await chrome.storage.local.get(DB_KEY);
-  if (data[DB_KEY]) {
-    localDB = { ...localDB, ...data[DB_KEY] };
+  try {
+    const data = await chrome.storage.local.get(DB_KEY);
+    if (data[DB_KEY]) {
+      localDB = { ...localDB, ...data[DB_KEY] };
+    }
+    isDBReady = true;
+    console.log('LocalGPT Database Initialized', localDB);
+  } catch (err) {
+    console.error('Failed to initialize LocalGPT database:', err);
+    // Set ready anyway to allow operation with default empty state
+    isDBReady = true;
   }
-  isDBReady = true;
-  console.log('LocalGPT Database Initialized', localDB);
 }
 
 // Debounced Save to avoid hitting write limits
@@ -79,21 +85,29 @@ const Controller = {
     const newConvos = request.conversations || [];
     let changed = false;
 
+    // Create a Map for O(1) lookups instead of O(n) with findIndex
+    const conversationMap = new Map(
+      localDB.conversations.map(c => [c.id, c])
+    );
+
     newConvos.forEach(newC => {
-      const index = localDB.conversations.findIndex(c => c.id === newC.id);
-      if (index > -1) {
-        // Update existing if content changed (simplified check)
-        // In a real scenario, you might want deeper diffing
-        localDB.conversations[index] = { ...localDB.conversations[index], ...newC };
+      const existing = conversationMap.get(newC.id);
+      if (existing) {
+        // Update existing - replace in the map
+        conversationMap.set(newC.id, { ...existing, ...newC });
         changed = true;
       } else {
         // Insert new
-        localDB.conversations.push(newC);
+        conversationMap.set(newC.id, newC);
         changed = true;
       }
     });
 
-    if (changed) saveDB();
+    // Update the conversations array from the map
+    if (changed) {
+      localDB.conversations = Array.from(conversationMap.values());
+      saveDB();
+    }
     return { success: true, count: localDB.conversations.length };
   },
 
@@ -176,23 +190,22 @@ const Controller = {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (!isDBReady) {
-    // Wait for DB to initialize with a more robust retry mechanism
+    // Wait for DB to initialize with a cleaner async approach
     const maxRetries = 10;
     const retryDelay = 100;
-    let retries = 0;
     
-    const waitForDB = () => {
-      if (isDBReady) {
-        handleMessage(request, sendResponse);
-      } else if (retries < maxRetries) {
-        retries++;
-        setTimeout(waitForDB, retryDelay);
-      } else {
-        sendResponse({ success: false, error: 'Database initialization timeout' });
+    (async () => {
+      for (let retries = 0; retries < maxRetries; retries++) {
+        if (isDBReady) {
+          handleMessage(request, sendResponse);
+          return;
+        }
+        await new Promise(resolve => setTimeout(resolve, retryDelay));
       }
-    };
+      // Timeout - DB still not ready
+      sendResponse({ success: false, error: 'Database initialization timeout' });
+    })();
     
-    setTimeout(waitForDB, retryDelay);
     return true; // Keep channel open
   }
   handleMessage(request, sendResponse);
