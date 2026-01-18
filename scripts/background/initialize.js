@@ -85,11 +85,12 @@ const Controller = {
         // Update existing if content changed (simplified check)
         // In a real scenario, you might want deeper diffing
         localDB.conversations[index] = { ...localDB.conversations[index], ...newC };
+        changed = true;
       } else {
         // Insert new
         localDB.conversations.push(newC);
+        changed = true;
       }
-      changed = true;
     });
 
     if (changed) saveDB();
@@ -150,14 +151,16 @@ const Controller = {
   
   savePrompt: (request) => {
     const { prompt } = request;
-    if (!prompt.id) prompt.id = crypto.randomUUID();
+    // Create a copy to avoid mutating the input
+    const promptCopy = { ...prompt };
+    if (!promptCopy.id) promptCopy.id = crypto.randomUUID();
     
-    const index = localDB.prompts.findIndex(p => p.id === prompt.id);
-    if (index > -1) localDB.prompts[index] = prompt;
-    else localDB.prompts.push(prompt);
+    const index = localDB.prompts.findIndex(p => p.id === promptCopy.id);
+    if (index > -1) localDB.prompts[index] = promptCopy;
+    else localDB.prompts.push(promptCopy);
     
     saveDB();
-    return { success: true, prompt };
+    return { success: true, prompt: promptCopy };
   },
 
   deletePrompt: (request) => {
@@ -173,8 +176,23 @@ const Controller = {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (!isDBReady) {
-    // Retry once if DB isn't ready (race condition handler)
-    setTimeout(() => handleMessage(request, sendResponse), 100);
+    // Wait for DB to initialize with a more robust retry mechanism
+    const maxRetries = 10;
+    const retryDelay = 100;
+    let retries = 0;
+    
+    const waitForDB = () => {
+      if (isDBReady) {
+        handleMessage(request, sendResponse);
+      } else if (retries < maxRetries) {
+        retries++;
+        setTimeout(waitForDB, retryDelay);
+      } else {
+        sendResponse({ success: false, error: 'Database initialization timeout' });
+      }
+    };
+    
+    setTimeout(waitForDB, retryDelay);
     return true; // Keep channel open
   }
   handleMessage(request, sendResponse);
@@ -191,7 +209,6 @@ function handleMessage(request, sendResponse) {
     } else if (action === 'ping') {
       sendResponse({ status: 'ok' });
     } else {
-      // console.warn('Unknown action:', action);
       sendResponse({ success: false, error: 'Unknown action' });
     }
   } catch (err) {
