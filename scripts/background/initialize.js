@@ -2,6 +2,9 @@
 // Implements a local database using chrome.storage.local
 // Replaces all API calls to api.wfh.team
 
+// Load context menu handler
+importScripts(chrome.runtime.getURL("scripts/background/contextMenu.js"));
+
 const DB_KEY = 'localGPT_DB';
 const DEBOUNCE_DELAY = 500;
 
