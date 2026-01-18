@@ -1,0 +1,836 @@
+{
+   "about": {
+      "message": "概要"
+   },
+   "about_model_title": {
+      "message": "ChatGPTにどのように回答してほしいですか？"
+   },
+   "about_model_tooltip": {
+      "message": "\u003Cul class='list-disc pl-5'>\u003Cli>ChatGPTはどのくらいフォーマルまたはカジュアルであるべきですか？\u003C/li>\u003Cli>回答の長さはどのくらいがよいですか？\u003C/li>\u003Cli>どのように呼ばれたいですか？\u003C/li>\u003Cli>ChatGPTはトピックに対して意見を持つべきですか、それとも中立を保つべきですか？\u003C/li>\u003C/ul>"
+   },
+   "about_user_title": {
+      "message": "より良い回答を提供するために、ChatGPTにあなたについて知ってほしいことは何ですか？"
+   },
+   "about_user_tooltip": {
+      "message": "\u003Cul class='list-disc pl-5'>\u003Cli>どこに住んでいますか？\u003C/li>\u003Cli>どんな仕事をしていますか？\u003C/li>\u003Cli>趣味や興味は何ですか？\u003C/li>\u003Cli>何時間でも話せるトピックは何ですか？\u003C/li>\u003Cli>あなたの目標は何ですか？\u003C/li>\u003C/ul>"
+   },
+   "about_you": {
+      "message": "あなたについて"
+   },
+   "action": {
+      "message": "アクション"
+   },
+   "add": {
+      "message": "追加"
+   },
+   "add_new_profile": {
+      "message": "+ 新しいプロファイルを追加"
+   },
+   "add_new_prompt": {
+      "message": "+ 新しいプロンプトを追加"
+   },
+   "add_new_step": {
+      "message": "+ 新しいステップを追加"
+   },
+   "add_subfolder": {
+      "message": "サブフォルダーを追加"
+   },
+   "add_tags": {
+      "message": "タグを追加"
+   },
+   "add_to_favorites": {
+      "message": "お気に入りに追加"
+   },
+   "add_to_folder": {
+      "message": "フォルダーに追加"
+   },
+   "add_to_notes": {
+      "message": "ノートに追加"
+   },
+   "advanced": {
+      "message": "詳細設定"
+   },
+   "all_conversations": {
+      "message": "すべての会話"
+   },
+   "all_conversations_are_archived": {
+      "message": "すべての会話がアーカイブされました"
+   },
+   "all_images_are_deleted": {
+      "message": "すべての画像が削除されました"
+   },
+   "all_images_are_now_public": {
+      "message": "すべての画像が公開されました"
+   },
+   "all_prompts": {
+      "message": "すべてのプロンプト"
+   },
+   "alphabetical": {
+      "message": "アルファベット順"
+   },
+   "anything_else_chatgpt_should_know_about_you": {
+      "message": "ChatGPTが知っておくべきことはありますか？"
+   },
+   "archive_all": {
+      "message": "すべてアーカイブ"
+   },
+   "archive_all_conversation": {
+      "message": "すべての会話をアーカイブ"
+   },
+   "archived": {
+      "message": "アーカイブ済み"
+   },
+   "attach": {
+      "message": "添付"
+   },
+   "auto_continue": {
+      "message": "自動継続"
+   },
+   "auto_generate_Steps_from_current_convrsation": {
+      "message": "現在の会話からステップを自動生成"
+   },
+   "cancel": {
+      "message": "キャンセル"
+   },
+   "categories": {
+      "message": "カテゴリ一覧"
+   },
+   "category": {
+      "message": "カテゴリ"
+   },
+   "chars": {
+      "message": "文字"
+   },
+   "clear": {
+      "message": "クリア"
+   },
+   "clear_all": {
+      "message": "すべてクリア"
+   },
+   "clear_filter": {
+      "message": "タグと言語フィルターを「すべて」にリセットしてみてください"
+   },
+   "clear_prompt_history": {
+      "message": "プロンプト履歴をクリア"
+   },
+   "close": {
+      "message": "閉じる"
+   },
+   "confirm": {
+      "message": "確認"
+   },
+   "conversation": {
+      "message": "会話"
+   },
+   "conversation_marked_as_favorite": {
+      "message": "会話がお気に入りに追加されました"
+   },
+   "conversation_moved_to_folder": {
+      "message": "会話がフォルダに移動されました"
+   },
+   "conversation_removed_from_favorites": {
+      "message": "会話がお気に入りから削除されました"
+   },
+   "conversations": {
+      "message": "会話一覧"
+   },
+   "conversations_manager": {
+      "message": "会話マネージャー"
+   },
+   "conversations_moved_successfully": {
+      "message": "会話が正常に移動されました"
+   },
+   "copied": {
+      "message": "コピー済み"
+   },
+   "copied_shared_conversation_url_to_clipboard": {
+      "message": "共有された会話のURLがクリップボードにコピーされました！"
+   },
+   "copied_to_clipboard_as_html": {
+      "message": "HTMLとしてクリップボードにコピー"
+   },
+   "copied_to_clipboard_markdown": {
+      "message": "クリップボードにコピーされました（Markdown）"
+   },
+   "copied_to_clipboard_with_format": {
+      "message": "クリップボードにコピーされました（フォーマット付き）"
+   },
+   "coppied_to_clipboard": {
+      "message": "クリップボードにコピーされました"
+   },
+   "copy": {
+      "message": "コピー"
+   },
+   "copy_markdown": {
+      "message": "マークダウンをコピー"
+   },
+   "copy_plain_text": {
+      "message": "プレーンテキストをコピー"
+   },
+   "copy_to_clipboard": {
+      "message": "クリップボードにコピー"
+   },
+   "copy_with_format": {
+      "message": "フォーマット付きでコピー"
+   },
+   "copying": {
+      "message": "コピー中"
+   },
+   "create": {
+      "message": "作成"
+   },
+   "create_a_gpt": {
+      "message": "+ GPTを作成"
+   },
+   "create_a_new_prompt": {
+      "message": "新しいプロンプトを作成"
+   },
+   "create_date": {
+      "message": "作成日"
+   },
+   "custom_gpts": {
+      "message": "カスタムGPTs"
+   },
+   "custom_instruction_profiles": {
+      "message": "カスタム指示プロファイル"
+   },
+   "custom_instructions": {
+      "message": "カスタム指示"
+   },
+   "customize_chatgpt": {
+      "message": "ChatGPTをカスタマイズ"
+   },
+   "default": {
+      "message": "デフォルト"
+   },
+   "delay_between_steps": {
+      "message": "ステップ間の遅延"
+   },
+   "delete": {
+      "message": "削除"
+   },
+   "delete_all": {
+      "message": "すべて削除"
+   },
+   "delete_all_conversations": {
+      "message": "すべての会話を削除"
+   },
+   "delete_all_images": {
+      "message": "すべての画像を削除"
+   },
+   "delete_conversation": {
+      "message": "会話を削除"
+   },
+   "delete_conversations": {
+      "message": "会話を削除"
+   },
+   "delete_favorite_conversations": {
+      "message": "お気に入りの会話を削除"
+   },
+   "delete_folder": {
+      "message": "フォルダを削除"
+   },
+   "delete_gpt": {
+      "message": "GPTを削除"
+   },
+   "delete_images": {
+      "message": "画像を削除"
+   },
+   "delete_pinned_message": {
+      "message": "ピン留めされたメッセージを削除"
+   },
+   "delete_profile": {
+      "message": "プロフィールを削除"
+   },
+   "delete_prompt": {
+      "message": "プロンプトを削除"
+   },
+   "delete_prompt_category": {
+      "message": "プロンプトカテゴリを削除"
+   },
+   "delete_prompts": {
+      "message": "プロンプトを削除"
+   },
+   "delete_selected_images": {
+      "message": "選択した画像を削除"
+   },
+   "disable": {
+      "message": "無効にする"
+   },
+   "disabled": {
+      "message": "無効"
+   },
+   "discard_changes": {
+      "message": "変更を破棄"
+   },
+   "download": {
+      "message": "ダウンロード"
+   },
+   "download_all_images": {
+      "message": "すべての画像をダウンロード"
+   },
+   "download_images": {
+      "message": "画像をダウンロード"
+   },
+   "download_images_by_date_range": {
+      "message": "日付範囲で画像をダウンロード"
+   },
+   "download_selected_images": {
+      "message": "選択した画像をダウンロード"
+   },
+   "duplicate": {
+      "message": "複製"
+   },
+   "edit": {
+      "message": "編集"
+   },
+   "edit_note": {
+      "message": "ノートを編集"
+   },
+   "edit_prompt": {
+      "message": "プロンプトを編集"
+   },
+   "enable": {
+      "message": "有効にする"
+   },
+   "enable_for_new_chats": {
+      "message": "新しいチャットで有効にする"
+   },
+   "enable_this_profile": {
+      "message": "このプロフィールを有効にする"
+   },
+   "enabled": {
+      "message": "有効"
+   },
+   "end_date": {
+      "message": "終了日"
+   },
+   "error_importing_prompts": {
+      "message": "プロンプトのインポートエラー"
+   },
+   "export": {
+      "message": "エクスポート"
+   },
+   "export_all": {
+      "message": "すべてエクスポート"
+   },
+   "export_all_conversations": {
+      "message": "すべての会話をエクスポート"
+   },
+   "export_by_date_range": {
+      "message": "日付範囲でエクスポート"
+   },
+   "export_conversations_by_date_range": {
+      "message": "日付範囲で会話をエクスポート"
+   },
+   "export_favorite_conversations": {
+      "message": "お気に入りの会話をエクスポート"
+   },
+   "export_folder_conversations": {
+      "message": "フォルダの会話をエクスポート"
+   },
+   "export_format_title": {
+      "message": "どのフォーマットでエクスポートしますか？"
+   },
+   "export_prompts": {
+      "message": "プロンプトをエクスポート"
+   },
+   "export_selected_conversations": {
+      "message": "選択した会話をエクスポート"
+   },
+   "export_selected_messages": {
+      "message": "選択したメッセージをエクスポート"
+   },
+   "exporting": {
+      "message": "エクスポート中"
+   },
+   "favorite": {
+      "message": "お気に入り"
+   },
+   "favorite_prompts": {
+      "message": "お気に入りのプロンプト"
+   },
+   "favorites": {
+      "message": "お気に入り"
+   },
+   "folder": {
+      "message": "フォルダー"
+   },
+   "folders": {
+      "message": "フォルダー一覧"
+   },
+   "gallery": {
+      "message": "ギャラリー"
+   },
+   "gpt_4_capabilities": {
+      "message": "GPT-4の機能"
+   },
+   "gpt_store": {
+      "message": "GPTストア"
+   },
+   "gpts": {
+      "message": "GPTs"
+   },
+   "help": {
+      "message": "ヘルプ"
+   },
+   "hide_instructions": {
+      "message": "指示を非表示"
+   },
+   "hide_tags": {
+      "message": "タグを隠す"
+   },
+   "image": {
+      "message": "画像"
+   },
+   "image_gallery": {
+      "message": "画像ギャラリー"
+   },
+   "import_prompts": {
+      "message": "プロンプトをインポート"
+   },
+   "imported_prompts_successfully": {
+      "message": "プロンプトが正常にインポートされました"
+   },
+   "invalid_file_format": {
+      "message": "無効なファイル形式"
+   },
+   "keep_editing": {
+      "message": "編集を続ける"
+   },
+   "keyboard_shortcuts": {
+      "message": "キーボードショートカット"
+   },
+   "language": {
+      "message": "言語"
+   },
+   "leave_review": {
+      "message": "レビューを残す"
+   },
+   "make_all_images_public": {
+      "message": "すべての画像を公開にする"
+   },
+   "make_private": {
+      "message": "非公開にする"
+   },
+   "make_public": {
+      "message": "公開にする"
+   },
+   "make_selected_images_public": {
+      "message": "選択した画像を公開にする"
+   },
+   "make_this_prompt_public": {
+      "message": "このプロンプトを公開にする"
+   },
+   "manage_profiles": {
+      "message": "プロフィールを管理"
+   },
+   "manage_subscription": {
+      "message": "サブスクリプションの管理"
+   },
+   "manager": {
+      "message": "マネージャー"
+   },
+   "more_about_you": {
+      "message": "あなたについてもっと"
+   },
+   "move": {
+      "message": "移動"
+   },
+   "move_conversation": {
+      "message": "会話を移動"
+   },
+   "move_conversations": {
+      "message": "会話を移動"
+   },
+   "move_folder": {
+      "message": "フォルダーを移動"
+   },
+   "move_prompts": {
+      "message": "プロンプトを移動"
+   },
+   "name": {
+      "message": "名前"
+   },
+   "new_category_hint": {
+      "message": "+ ボタンをクリックして新しいカテゴリを追加"
+   },
+   "new_folder": {
+      "message": "+ 新しいフォルダー"
+   },
+   "new_folder_hint": {
+      "message": "+ ボタンをクリックして新しいフォルダーを追加"
+   },
+   "new_update_available": {
+      "message": "新しいアップデートがあります"
+   },
+   "newsletters": {
+      "message": "ニュースレター"
+   },
+   "nickname": {
+      "message": "ニックネーム"
+   },
+   "no": {
+      "message": "いいえ"
+   },
+   "no_conversations_found": {
+      "message": "会話が見つかりませんでした"
+   },
+   "no_conversations_found_in_this_folder": {
+      "message": "このフォルダには会話が見つかりませんでした"
+   },
+   "no_default_prompt_found": {
+      "message": "デフォルトのプロンプトが見つかりません"
+   },
+   "no_images_found": {
+      "message": "画像が見つかりません"
+   },
+   "no_images_to_download": {
+      "message": "ダウンロードする画像がありません"
+   },
+   "no_notes_found": {
+      "message": "ノートが見つかりませんでした"
+   },
+   "no_pinned_messages_found": {
+      "message": "ピン留めされたメッセージが見つかりませんでした"
+   },
+   "no_profiles_found": {
+      "message": "カスタム指示プロファイルが見つかりませんでした"
+   },
+   "no_prompts_found": {
+      "message": "プロンプトが見つかりませんでした"
+   },
+   "no_user_messages_found_in_the_conversation": {
+      "message": "この会話にはユーザーのメッセージが見つかりませんでした"
+   },
+   "notes": {
+      "message": "ノート"
+   },
+   "notes_manager": {
+      "message": "ノートマネージャー"
+   },
+   "occupation": {
+      "message": "職業"
+   },
+   "off": {
+      "message": "オフ"
+   },
+   "on": {
+      "message": "オン"
+   },
+   "only_unassigned": {
+      "message": "未割り当てのみ"
+   },
+   "open": {
+      "message": "開く"
+   },
+   "open_conversation": {
+      "message": "会話を開く"
+   },
+   "open_conversation_in_new_tab": {
+      "message": "新しいタブで会話を開く"
+   },
+   "open_in_new_tab": {
+      "message": "新しいタブで開く"
+   },
+   "personalization": {
+      "message": "パーソナライズ"
+   },
+   "pinned_messages": {
+      "message": "ピン留めされたメッセージ"
+   },
+   "please_add_at_least_one_step_to_the_prompt_chain": {
+      "message": "プロンプトチェーンに少なくとも1つのステップを追加してください"
+   },
+   "please_enter_a_prompt_name": {
+      "message": "プロンプト名を入力してください"
+   },
+   "please_enter_a_valid_delay_in_milliseconds": {
+      "message": "有効な遅延時間をミリ秒で入力してください"
+   },
+   "please_select_start_and_end_date": {
+      "message": "開始日と終了日を選択してください"
+   },
+   "plus_add_smart_step": {
+      "message": "+ スマートステップを追加"
+   },
+   "plus_create_new_profile": {
+      "message": "+ 新しいプロファイルを作成"
+   },
+   "preview": {
+      "message": "プレビュー"
+   },
+   "preview_conversation": {
+      "message": "会話をプレビュー"
+   },
+   "private": {
+      "message": "非公開"
+   },
+   "pro": {
+      "message": "プロ"
+   },
+   "pro_account": {
+      "message": "プロアカウント"
+   },
+   "profile_name": {
+      "message": "プロファイル名"
+   },
+   "prompt_input": {
+      "message": "プロンプト入力"
+   },
+   "prompt_is_added_to_your_prompts": {
+      "message": "プロンプトがあなたのプロンプトに追加されました"
+   },
+   "prompt_is_updated": {
+      "message": "プロンプトが更新されました"
+   },
+   "prompt_name": {
+      "message": "プロンプト名"
+   },
+   "prompt_reported": {
+      "message": "プロンプトが報告されました"
+   },
+   "prompts": {
+      "message": "プロンプト"
+   },
+   "prompts_manager": {
+      "message": "プロンプトマネージャー"
+   },
+   "prompts_moved_successfully": {
+      "message": "プロンプトが正常に移動されました"
+   },
+   "public": {
+      "message": "公開"
+   },
+   "recent": {
+      "message": "最近の"
+   },
+   "reference_this_chat": {
+      "message": "このチャットを参照"
+   },
+   "reference_this_note": {
+      "message": "このメモを参照"
+   },
+   "release_note": {
+      "message": "リリースノート"
+   },
+   "remind_me_later": {
+      "message": "後で通知する"
+   },
+   "remove_from_favorites": {
+      "message": "お気に入りから削除"
+   },
+   "remove_from_folder": {
+      "message": "フォルダーから削除"
+   },
+   "remove_image": {
+      "message": "画像を削除"
+   },
+   "rename": {
+      "message": "名前を変更"
+   },
+   "report": {
+      "message": "報告"
+   },
+   "reset_favorite_prompts": {
+      "message": "お気に入りのプロンプトをリセット"
+   },
+   "review_subtitle": {
+      "message": "\u003Ca style='text-decoration:underline;color:#3c80f5; font-weight:bold;' target='_blank' href='https://www.superpowerdaily.com/p/win-1-year-free-pro-subscription-to-superpower-chatgpt'>1年間の無料プロサブスクリプション\u003C/a>を獲得するチャンスのために、レビューを残してください。"
+   },
+   "review_title": {
+      "message": "Superpower ChatGPTを楽しんでいますか？"
+   },
+   "run": {
+      "message": "実行"
+   },
+   "run_from_step": {
+      "message": "ステップから実行"
+   },
+   "save": {
+      "message": "保存"
+   },
+   "save_as_pdf": {
+      "message": "PDFとして保存"
+   },
+   "save_to_my_prompts": {
+      "message": "自分のプロンプトに保存"
+   },
+   "search": {
+      "message": "検索"
+   },
+   "search_conversations": {
+      "message": "会話を検索"
+   },
+   "search_gallery": {
+      "message": "ギャラリーを検索"
+   },
+   "search_notes": {
+      "message": "タイトルまたは内容で検索"
+   },
+   "search_pinned_messages": {
+      "message": "ピン留めされたメッセージを検索"
+   },
+   "search_profiles": {
+      "message": "プロファイルを検索"
+   },
+   "search_prompts": {
+      "message": "プロンプトを検索"
+   },
+   "see_all_notes": {
+      "message": "すべてのノートを見る"
+   },
+   "see_all_prompts": {
+      "message": "すべてのプロンプトを見る"
+   },
+   "select_a_folder": {
+      "message": "フォルダーを選択"
+   },
+   "select_a_profile": {
+      "message": "プロファイルを選択"
+   },
+   "select_date_range": {
+      "message": "日付範囲を選択"
+   },
+   "select_images": {
+      "message": "画像を選択"
+   },
+   "select_up_to_3": {
+      "message": "最大3つを選択"
+   },
+   "selected_images_are_now_public": {
+      "message": "選択した画像が公開されました"
+   },
+   "set_color": {
+      "message": "色を設定"
+   },
+   "set_image": {
+      "message": "画像を設定"
+   },
+   "set_profile": {
+      "message": "プロファイルを設定"
+   },
+   "settings": {
+      "message": "設定"
+   },
+   "share": {
+      "message": "共有"
+   },
+   "share_images": {
+      "message": "画像を共有"
+   },
+   "shortcut": {
+      "message": "ショートカット"
+   },
+   "show_all": {
+      "message": "すべて表示"
+   },
+   "show_instructions": {
+      "message": "指示を表示"
+   },
+   "show_tags": {
+      "message": "タグを表示"
+   },
+   "sort_categories": {
+      "message": "カテゴリを並べ替え"
+   },
+   "sort_folders": {
+      "message": "フォルダーを並べ替え"
+   },
+   "start_a_new_chat": {
+      "message": "新しいチャットを開始"
+   },
+   "start_a_new_chat_in_this_folder": {
+      "message": "このフォルダで新しいチャットを開始"
+   },
+   "start_a_new_chat_with_this_gpt": {
+      "message": "このGPTで新しいチャットを開始"
+   },
+   "start_date": {
+      "message": "開始日"
+   },
+   "start_date_cannot_be_greater_than_end_date": {
+      "message": "開始日は終了日より後の日付にすることはできません"
+   },
+   "started_listening": {
+      "message": "リスト開始... 🔴"
+   },
+   "step": {
+      "message": "ステップ"
+   },
+   "steps": {
+      "message": "ステップ"
+   },
+   "stopped_listening": {
+      "message": "リスト停止 ⏸️"
+   },
+   "subscription": {
+      "message": "サブスクリプション"
+   },
+   "tag": {
+      "message": "タグ"
+   },
+   "tags": {
+      "message": "タグ"
+   },
+   "template": {
+      "message": "テンプレート"
+   },
+   "template_words": {
+      "message": "テンプレートの単語"
+   },
+   "tone": {
+      "message": "トーン"
+   },
+   "unarchive": {
+      "message": "アーカイブを解除"
+   },
+   "update_date": {
+      "message": "更新日"
+   },
+   "update_now": {
+      "message": "今すぐ更新"
+   },
+   "update_prompt": {
+      "message": "プロンプトを更新"
+   },
+   "upgrade": {
+      "message": "アップグレード"
+   },
+   "upgrade_to_pro": {
+      "message": "プロにアップグレード"
+   },
+   "view": {
+      "message": "表示"
+   },
+   "view_note": {
+      "message": "ノートを表示"
+   },
+   "voice": {
+      "message": "音声"
+   },
+   "what_do_you_do": {
+      "message": "あなたの職業は何ですか？"
+   },
+   "what_should_chatgpt_call_you": {
+      "message": "ChatGPTはあなたを何と呼べばよいですか？"
+   },
+   "what_traits_should_chatgpt_have": {
+      "message": "ChatGPTはどのような特徴を持つべきですか？"
+   },
+   "words": {
+      "message": "単語"
+   },
+   "writing_style": {
+      "message": "文体"
+   },
+   "yes": {
+      "message": "はい"
+   },
+   "you_can_only_select_up_to_3_tags": {
+      "message": "選択できるタグは最大3つまでです"
+   },
+   "you_have_already_reported_this_prompt": {
+      "message": "このプロンプトはすでに報告されています"
+   }
+}

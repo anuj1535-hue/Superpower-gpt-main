@@ -1,0 +1,833 @@
+{
+   "about": {
+      "message": "About"
+   },
+   "about_model_title": {
+      "message": "How would you like ChatGPT to respond?"
+   },
+   "about_model_tooltip": {
+      "message": "\u003Cul class='list-disc pl-5'>\u003Cli>How formal or casual should ChatGPT be?\u003C/li>\u003Cli>How long or short should responses generally be?\u003C/li>\u003Cli>How do you want to be addressed?\u003C/li>\u003Cli>Should ChatGPT have opinions on topics or remain neutral?\u003C/li>\u003C/ul>"
+   },
+   "about_user_title": {
+      "message": "What would you like ChatGPT to know about you to provide better responses?"
+   },
+   "about_user_tooltip": {
+      "message": "\u003Cul class='list-disc pl-5'>\u003Cli>Where are you based?\u003C/li>\u003Cli>What do you do for work?\u003C/li>\u003Cli>What are your hobbies and interests?\u003C/li>\u003Cli>What subjects can you talk about for hours?\u003C/li>\u003Cli>What are some goals you have?\u003C/li>\u003C/ul>"
+   },
+   "about_you": {
+      "message": "About you"
+   },
+   "action": {
+      "message": "Action"
+   },
+   "add": {
+      "message": "Add"
+   },
+   "add_subfolder": {
+      "message": "Add subfolder"
+   },
+   "add_tags": {
+      "message": "Add tags"
+   },
+   "add_to_favorites": {
+      "message": "Add to favorites"
+   },
+   "add_to_folder": {
+      "message": "Add to folder"
+   },
+   "add_to_notes": {
+      "message": "Add to notes"
+   },
+   "advanced": {
+      "message": "Advanced"
+   },
+   "all_conversations": {
+      "message": "All conversations"
+   },
+   "all_conversations_are_archived": {
+      "message": "All conversations are archived"
+   },
+   "all_images_are_deleted": {
+      "message": "All images are deleted"
+   },
+   "all_images_are_now_public": {
+      "message": "All images are now public"
+   },
+   "all_prompts": {
+      "message": "All prompts"
+   },
+   "alphabetical": {
+      "message": "Alphabetical"
+   },
+   "anything_else_chatgpt_should_know_about_you": {
+      "message": "Anything else ChatGPT should know about you?"
+   },
+   "archive_all": {
+      "message": "Archive all"
+   },
+   "archive_all_conversation": {
+      "message": "Archive all conversation"
+   },
+   "archived": {
+      "message": "Archived"
+   },
+   "attach": {
+      "message": "Attach"
+   },
+   "auto_continue": {
+      "message": "Auto continue"
+   },
+   "auto_generate_Steps_from_current_convrsation": {
+      "message": "Auto-generate steps from current conversation"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "categories": {
+      "message": "Categories"
+   },
+   "category": {
+      "message": "Category"
+   },
+   "chars": {
+      "message": "Chars"
+   },
+   "clear": {
+      "message": "Clear"
+   },
+   "clear_all": {
+      "message": "Clear all"
+   },
+   "clear_filter": {
+      "message": "Try resetting Tag and Language filter to All"
+   },
+   "clear_prompt_history": {
+      "message": "Clear prompt history"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "confirm": {
+      "message": "Confirm"
+   },
+   "conversation": {
+      "message": "Conversation"
+   },
+   "conversation_marked_as_favorite": {
+      "message": "Conversation marked as favorite"
+   },
+   "conversation_moved_to_folder": {
+      "message": "Conversation moved to folder"
+   },
+   "conversation_removed_from_favorites": {
+      "message": "Conversation removed from favorites"
+   },
+   "conversations": {
+      "message": "Conversations"
+   },
+   "conversations_manager": {
+      "message": "Conversations manager"
+   },
+   "conversations_moved_successfully": {
+      "message": "Conversations moved successfully"
+   },
+   "copied": {
+      "message": "Copied"
+   },
+   "copied_shared_conversation_url_to_clipboard": {
+      "message": "Copied shared conversation URL to clipboard!"
+   },
+   "copied_to_clipboard_as_html": {
+      "message": "Copied to clipboard as HTML"
+   },
+   "copied_to_clipboard_markdown": {
+      "message": "Copied to clipboard (Markdown)"
+   },
+   "copied_to_clipboard_with_format": {
+      "message": "Copied to clipboard (With format)"
+   },
+   "coppied_to_clipboard": {
+      "message": "Coppied to clipboard"
+   },
+   "copy": {
+      "message": "Copy"
+   },
+   "copy_markdown": {
+      "message": "Copy markdown"
+   },
+   "copy_plain_text": {
+      "message": "Copy plain text"
+   },
+   "copy_to_clipboard": {
+      "message": "Copy to clipboard"
+   },
+   "copy_with_format": {
+      "message": "Copy with format"
+   },
+   "copying": {
+      "message": "Copying"
+   },
+   "create": {
+      "message": "Create"
+   },
+   "create_a_new_prompt": {
+      "message": "Create a new prompt"
+   },
+   "create_date": {
+      "message": "Create date"
+   },
+   "custom_gpts": {
+      "message": "Custom GPTs"
+   },
+   "custom_instruction_profiles": {
+      "message": "Custom instruction profiles"
+   },
+   "custom_instructions": {
+      "message": "Custom instructions"
+   },
+   "customize_chatgpt": {
+      "message": "Customize ChatGPT"
+   },
+   "default": {
+      "message": "Default"
+   },
+   "delay_between_steps": {
+      "message": "Delay between steps"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "delete_all": {
+      "message": "Delete all"
+   },
+   "delete_all_conversations": {
+      "message": "Delete all conversations"
+   },
+   "delete_all_images": {
+      "message": "Delete all images"
+   },
+   "delete_conversation": {
+      "message": "Delete conversation"
+   },
+   "delete_conversations": {
+      "message": "Delete conversations"
+   },
+   "delete_favorite_conversations": {
+      "message": "Delete favorite conversations"
+   },
+   "delete_folder": {
+      "message": "Delete folder"
+   },
+   "delete_gpt": {
+      "message": "Delete GPT"
+   },
+   "delete_images": {
+      "message": "Delete images"
+   },
+   "delete_pinned_message": {
+      "message": "Delete pinned message"
+   },
+   "delete_profile": {
+      "message": "Delete profile"
+   },
+   "delete_prompt": {
+      "message": "Delete prompt"
+   },
+   "delete_prompt_category": {
+      "message": "Delete prompt category"
+   },
+   "delete_prompts": {
+      "message": "Delete prompts"
+   },
+   "delete_selected_images": {
+      "message": "Delete selected images"
+   },
+   "disable": {
+      "message": "Disable"
+   },
+   "disabled": {
+      "message": "Disabled"
+   },
+   "discard_changes": {
+      "message": "Discard changes"
+   },
+   "download": {
+      "message": "Download"
+   },
+   "download_all_images": {
+      "message": "Download all images"
+   },
+   "download_images": {
+      "message": "Download images"
+   },
+   "download_images_by_date_range": {
+      "message": "Download images by date range"
+   },
+   "download_selected_images": {
+      "message": "Download selected images"
+   },
+   "duplicate": {
+      "message": "Duplicate"
+   },
+   "edit": {
+      "message": "Edit"
+   },
+   "edit_note": {
+      "message": "Edit note"
+   },
+   "edit_prompt": {
+      "message": "Edit prompt"
+   },
+   "enable": {
+      "message": "Enable"
+   },
+   "enable_for_new_chats": {
+      "message": "Enable for new chats"
+   },
+   "enable_this_profile": {
+      "message": "Enable this profile"
+   },
+   "enabled": {
+      "message": "Enabled"
+   },
+   "end_date": {
+      "message": "End date"
+   },
+   "error_importing_prompts": {
+      "message": "Error importing prompts"
+   },
+   "export": {
+      "message": "Export"
+   },
+   "export_all": {
+      "message": "Export all"
+   },
+   "export_all_conversations": {
+      "message": "Export all conversations"
+   },
+   "export_by_date_range": {
+      "message": "Export by date range"
+   },
+   "export_conversations_by_date_range": {
+      "message": "Export conversations by date range"
+   },
+   "export_favorite_conversations": {
+      "message": "Export Favorite conversations"
+   },
+   "export_folder_conversations": {
+      "message": "Export folder conversations"
+   },
+   "export_format_title": {
+      "message": "In what format do you want to export?"
+   },
+   "export_prompts": {
+      "message": "Export prompts"
+   },
+   "export_selected_conversations": {
+      "message": "Export selected conversations"
+   },
+   "export_selected_messages": {
+      "message": "Export selected messages"
+   },
+   "exporting": {
+      "message": "Exporting"
+   },
+   "favorite": {
+      "message": "Favorite"
+   },
+   "favorite_prompts": {
+      "message": "Favorite prompts"
+   },
+   "favorites": {
+      "message": "Favorites"
+   },
+   "folder": {
+      "message": "Folder"
+   },
+   "folders": {
+      "message": "Folders"
+   },
+   "gallery": {
+      "message": "Gallery"
+   },
+   "gpt_4_capabilities": {
+      "message": "GPT-4 Capabilities"
+   },
+   "gpt_store": {
+      "message": "GPT Store"
+   },
+   "gpts": {
+      "message": "GPTs"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "hide_instructions": {
+      "message": "Hide instructions"
+   },
+   "hide_tags": {
+      "message": "Hide tags"
+   },
+   "image": {
+      "message": "Image"
+   },
+   "image_gallery": {
+      "message": "Image gallery"
+   },
+   "import_prompts": {
+      "message": "Import prompts"
+   },
+   "imported_prompts_successfully": {
+      "message": "Imported Prompts Successfully"
+   },
+   "invalid_file_format": {
+      "message": "Invalid file format"
+   },
+   "keep_editing": {
+      "message": "Keep editing"
+   },
+   "keyboard_shortcuts": {
+      "message": "Keyboard shortcuts"
+   },
+   "language": {
+      "message": "Language"
+   },
+   "leave_review": {
+      "message": "Leave a review"
+   },
+   "make_all_images_public": {
+      "message": "Make all images public"
+   },
+   "make_private": {
+      "message": "Make private"
+   },
+   "make_public": {
+      "message": "Make public"
+   },
+   "make_selected_images_public": {
+      "message": "Make selected images public"
+   },
+   "make_this_prompt_public": {
+      "message": "Make this prompt public"
+   },
+   "manage_profiles": {
+      "message": "Manage profiles"
+   },
+   "manage_subscription": {
+      "message": "Manage subscription"
+   },
+   "manager": {
+      "message": "Manager"
+   },
+   "more_about_you": {
+      "message": "More about you"
+   },
+   "move": {
+      "message": "Move"
+   },
+   "move_conversation": {
+      "message": "Move conversation"
+   },
+   "move_conversations": {
+      "message": "Move conversations"
+   },
+   "move_folder": {
+      "message": "Move folder"
+   },
+   "move_prompts": {
+      "message": "Move prompts"
+   },
+   "name": {
+      "message": "Name"
+   },
+   "new_category_hint": {
+      "message": "Click the + button to add a new category"
+   },
+   "new_folder_hint": {
+      "message": "Click the + button to add a new folder"
+   },
+   "new_update_available": {
+      "message": "New update available"
+   },
+   "newsletters": {
+      "message": "Newsletters"
+   },
+   "nickname": {
+      "message": "Nickname"
+   },
+   "no": {
+      "message": "No"
+   },
+   "no_conversations_found": {
+      "message": "No conversations found"
+   },
+   "no_conversations_found_in_this_folder": {
+      "message": "No conversations found in this folder"
+   },
+   "no_default_prompt_found": {
+      "message": "No default prompt found"
+   },
+   "no_images_found": {
+      "message": "No images found"
+   },
+   "no_images_to_download": {
+      "message": "No images to download"
+   },
+   "no_notes_found": {
+      "message": "No notes found"
+   },
+   "no_pinned_messages_found": {
+      "message": "No pinned messages found"
+   },
+   "no_profiles_found": {
+      "message": "No custom instruction profiles found"
+   },
+   "no_prompts_found": {
+      "message": "No prompts found"
+   },
+   "no_user_messages_found_in_the_conversation": {
+      "message": "No user messages found in the conversation"
+   },
+   "notes": {
+      "message": "Notes"
+   },
+   "notes_manager": {
+      "message": "Notes manager"
+   },
+   "occupation": {
+      "message": "Occupation"
+   },
+   "off": {
+      "message": "Off"
+   },
+   "on": {
+      "message": "On"
+   },
+   "only_unassigned": {
+      "message": "Only unassigned"
+   },
+   "open": {
+      "message": "Open"
+   },
+   "open_conversation": {
+      "message": "Open Conversation"
+   },
+   "open_conversation_in_new_tab": {
+      "message": "Open conversation in new tab"
+   },
+   "open_in_new_tab": {
+      "message": "Open in new tab"
+   },
+   "personalization": {
+      "message": "Personalization"
+   },
+   "pinned_messages": {
+      "message": "Pinned messages"
+   },
+   "please_add_at_least_one_step_to_the_prompt_chain": {
+      "message": "Please add at least one step to the prompt chain"
+   },
+   "please_enter_a_prompt_name": {
+      "message": "Please enter a prompt name"
+   },
+   "please_enter_a_valid_delay_in_milliseconds": {
+      "message": "Please enter a valid delay in milliseconds"
+   },
+   "please_select_start_and_end_date": {
+      "message": "Please select start and end date"
+   },
+   "plus_add_new_profile": {
+      "message": "+ Add new profile"
+   },
+   "plus_add_new_prompt": {
+      "message": "+ Add new prompt"
+   },
+   "plus_add_new_step": {
+      "message": "+ Add new step"
+   },
+   "plus_add_smart_step": {
+      "message": "+ Add Smart Step"
+   },
+   "plus_create_a_gpt": {
+      "message": "+ Create a GPT"
+   },
+   "plus_create_new_profile": {
+      "message": "+ Create new profile"
+   },
+   "plus_new_folder": {
+      "message": "+ New folder"
+   },
+   "preview": {
+      "message": "Preview"
+   },
+   "preview_conversation": {
+      "message": "Preview conversation"
+   },
+   "private": {
+      "message": "Private"
+   },
+   "pro": {
+      "message": "Pro"
+   },
+   "pro_account": {
+      "message": "Pro account"
+   },
+   "profile_name": {
+      "message": "Profile name"
+   },
+   "prompt_input": {
+      "message": "Prompt input"
+   },
+   "prompt_is_added_to_your_prompts": {
+      "message": "Prompt is added to your prompts"
+   },
+   "prompt_is_updated": {
+      "message": "Prompt is updated"
+   },
+   "prompt_name": {
+      "message": "Prompt name"
+   },
+   "prompt_reported": {
+      "message": "Prompt reported"
+   },
+   "prompts": {
+      "message": "Prompts"
+   },
+   "prompts_manager": {
+      "message": "Prompts manager"
+   },
+   "prompts_moved_successfully": {
+      "message": "Prompts moved successfully"
+   },
+   "public": {
+      "message": "Public"
+   },
+   "recent": {
+      "message": "Recent"
+   },
+   "reference_this_chat": {
+      "message": "Reference this chat"
+   },
+   "reference_this_note": {
+      "message": "Reference this note"
+   },
+   "release_note": {
+      "message": "Release note"
+   },
+   "remind_me_later": {
+      "message": "Remind me later"
+   },
+   "remove_from_favorites": {
+      "message": "Remove from favorites"
+   },
+   "remove_from_folder": {
+      "message": "Remove from folder"
+   },
+   "remove_image": {
+      "message": "Remove image"
+   },
+   "rename": {
+      "message": "Rename"
+   },
+   "report": {
+      "message": "Report"
+   },
+   "reset_favorite_prompts": {
+      "message": "Reset favorite prompts"
+   },
+   "review_subtitle": {
+      "message": "Consider leaving us a review for a chance to win a \u003Ca style='text-decoration:underline;color:#3c80f5; font-weight:bold;' target='_blank' href='https://www.superpowerdaily.com/p/win-1-year-free-pro-subscription-to-superpower-chatgpt'>One Year Free Pro Subscription\u003C/a>."
+   },
+   "review_title": {
+      "message": "Are you enjoying Superpower ChatGPT?"
+   },
+   "run": {
+      "message": "Run"
+   },
+   "run_from_step": {
+      "message": "Run from step"
+   },
+   "save": {
+      "message": "Save"
+   },
+   "save_as_pdf": {
+      "message": "Save as PDF"
+   },
+   "save_to_my_prompts": {
+      "message": "Save to my prompts"
+   },
+   "search": {
+      "message": "Search"
+   },
+   "search_conversations": {
+      "message": "Search conversations"
+   },
+   "search_gallery": {
+      "message": "Search gallery"
+   },
+   "search_notes": {
+      "message": "Search by title or content"
+   },
+   "search_pinned_messages": {
+      "message": "Search pinned messages"
+   },
+   "search_profiles": {
+      "message": "Search profiles"
+   },
+   "search_prompts": {
+      "message": "Search prompts"
+   },
+   "see_all_notes": {
+      "message": "See All Notes"
+   },
+   "see_all_prompts": {
+      "message": "See all prompts"
+   },
+   "select_a_folder": {
+      "message": "Select a folder"
+   },
+   "select_a_profile": {
+      "message": "Select a profile"
+   },
+   "select_date_range": {
+      "message": "Select date range"
+   },
+   "select_images": {
+      "message": "Select images"
+   },
+   "select_up_to_3": {
+      "message": "Select up to 3"
+   },
+   "selected_images_are_now_public": {
+      "message": "Selected images are now public"
+   },
+   "set_color": {
+      "message": "Set color"
+   },
+   "set_image": {
+      "message": "Set image"
+   },
+   "set_profile": {
+      "message": "Set profile"
+   },
+   "settings": {
+      "message": "Settings"
+   },
+   "share": {
+      "message": "Share"
+   },
+   "share_images": {
+      "message": "Share images"
+   },
+   "shortcut": {
+      "message": "Shortcut"
+   },
+   "show_all": {
+      "message": "Show all"
+   },
+   "show_instructions": {
+      "message": "Show instructions"
+   },
+   "show_tags": {
+      "message": "Show tags"
+   },
+   "sort_categories": {
+      "message": "Sort categories"
+   },
+   "sort_folders": {
+      "message": "Sort folders"
+   },
+   "start_a_new_chat": {
+      "message": "Start a new chat"
+   },
+   "start_a_new_chat_in_this_folder": {
+      "message": "Start a new chat in this folder"
+   },
+   "start_a_new_chat_with_this_gpt": {
+      "message": "Start a new chat with this GPT"
+   },
+   "start_date": {
+      "message": "Start date"
+   },
+   "start_date_cannot_be_greater_than_end_date": {
+      "message": "Start date cannot be greater than end date"
+   },
+   "started_listening": {
+      "message": "Start listening...  🔴"
+   },
+   "step": {
+      "message": "Step"
+   },
+   "steps": {
+      "message": "Steps"
+   },
+   "stopped_listening": {
+      "message": "Stopped listening  ⏸️"
+   },
+   "subscription": {
+      "message": "Subscription"
+   },
+   "tags": {
+      "message": "Tags"
+   },
+   "template": {
+      "message": "Template,"
+   },
+   "template_words": {
+      "message": "Template words"
+   },
+   "tone": {
+      "message": "Tone"
+   },
+   "unarchive": {
+      "message": "Unarchive"
+   },
+   "update_date": {
+      "message": "Update date"
+   },
+   "update_now": {
+      "message": "Update now"
+   },
+   "update_prompt": {
+      "message": "Update prompt"
+   },
+   "upgrade": {
+      "message": "Upgrade"
+   },
+   "upgrade_to_pro": {
+      "message": "Upgrade to Pro"
+   },
+   "view": {
+      "message": "View"
+   },
+   "view_note": {
+      "message": "View note"
+   },
+   "voice": {
+      "message": "Voice"
+   },
+   "what_do_you_do": {
+      "message": "What do you do?"
+   },
+   "what_should_chatgpt_call_you": {
+      "message": "What should ChatGPT call you?"
+   },
+   "what_traits_should_chatgpt_have": {
+      "message": "What traits should ChatGPT have?"
+   },
+   "words": {
+      "message": "Words"
+   },
+   "writing_style": {
+      "message": "Writing style"
+   },
+   "yes": {
+      "message": "Yes"
+   },
+   "you_can_only_select_up_to_3_tags": {
+      "message": "You can only select up to 3 tags"
+   },
+   "you_have_already_reported_this_prompt": {
+      "message": "You have already reported this prompt"
+   }
+}

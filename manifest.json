@@ -1,0 +1,60 @@
+{
+   "action": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "scripts/background/background.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+U",
+            "mac": "Command+Shift+U"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/content/content.main.start.dba7906fbd.js" ],
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*", "https://ai.com/*", "https://sora.com/*", "https://chat.com/*", "https://claude.ai/*", "https://oaistatic.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "js": [ "scripts/content/content.isolated.start.bc11d98dfd.js" ],
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*", "https://ai.com/*", "https://sora.com/*", "https://chat.com/*", "https://claude.ai/*", "https://oaistatic.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "scripts/styles/global.css", "scripts/styles/katex.css" ],
+      "js": [ "scripts/thirdParty/FileSaver.js", "scripts/thirdParty/jszip.js", "scripts/thirdParty/katex.js", "scripts/thirdParty/texmath.js", "scripts/thirdParty/markdown-it-sup.js", "scripts/thirdParty/markdown-it.js", "scripts/thirdParty/highlight.js", "scripts/thirdParty/sortable.js", "scripts/content/content.isolated.end.4aef059451.js" ],
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*", "https://ai.com/*", "https://sora.com/*", "https://chat.com/*", "https://claude.ai/*", "https://oaistatic.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "ChatGPT with Superpowers! Folders, Search, Export, Prompts Manager and Optimizer, Minimap, Gallery, Reference Chats, Model Switcher",
+   "homepage_url": "https://www.spchatgpt.com",
+   "host_permissions": [ "https://chat.openai.com/*", "https://chatgpt.com/*", "https://ai.com/*", "https://sora.com/*", "https://chat.com/*", "https://claude.ai/*", "https://oaistatic.com/*" ],
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzG6ZR+j3lpHF0XrDLIXdrk25idObfq+RK7WM+pIaQmDO2nM5Y+SZJJbFwyxjWX+3V6XOgS5v9Lpnqg46OJ/W9Q5i23Usx1MXgaJBTlEFz0XG+PYK6BElhc9itS7m6oCLknin97a533tusXmm8zW7kaDGy8vycMDY6Ffbqa3sn0PqZ8bXUlAjgO91dQcB8EtlT906hwhZjtfEYvp2hdxYkRFxfuaR1WMLkxttVXv506RXJowxq0LO3aqj83QeJoXkQF1wbzCxYO1VpVGEmYIQxIKw/csusZNZs8gwJrIWtOzhMgDNOFzXNeZl0ASgoj2M9UsZp+Dunn57VT8tQyaE6QIDAQAB",
+   "manifest_version": 3,
+   "name": "Superpower ChatGPT",
+   "omnibox": {
+      "keyword": "sp"
+   },
+   "optional_permissions": [ "activeTab", "tabs" ],
+   "permissions": [ "storage", "unlimitedStorage", "contextMenus" ],
+   "trial_tokens": [ "A9vXLC/8BqMLvw5lAB4zcQN90by2ziANct4Ps8KUlyGnuWoDoD20pA4yERHMPgR+lXdjG3EJKoptYPiGZWNDbQMAAACCeyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vYW1obWVlbm1hcGxkcGpkZWRla2FsbmZpZmducGZua2MiLCJmZWF0dXJlIjoiQUlSZXdyaXRlckFQSSIsImV4cGlyeSI6MTc2OTQ3MjAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==", "A/u1ExuMgsBrPfPkO3iiG17SBgOCIKNdizVn7J2FEJhpVyPM4Omi6p9BkBtyHuFeLEAlZY9ruNCPUhQZov5z5AoAAACPeyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vYW1obWVlbm1hcGxkcGpkZWRla2FsbmZpZmducGZua2MiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.0.16",
+   "web_accessible_resources": [ {
+      "matches": [ "https://chat.openai.com/*", "https://chatgpt.com/*", "https://ai.com/*", "https://sora.com/*", "https://chat.com/*", "https://claude.ai/*", "https://oaistatic.com/*" ],
+      "resources": [ "_locales/*", "icons/*", "images/*", "sounds/*", "scripts/content/*" ]
+   } ]
+}

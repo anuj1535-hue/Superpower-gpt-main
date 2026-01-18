@@ -1,0 +1,1 @@
+function injectScript(t){const e=document.createElement("script");e.setAttribute("src",t),e.setAttribute("type","text/javascript"),e.onload=function(){this.remove()},document.documentElement.prepend(e)}const isOpera=window.navigator.userAgent.indexOf("OPR")>-1||window.navigator.userAgent.indexOf("Opera")>-1,isFirefox=window.navigator.userAgent.toLowerCase().indexOf("firefox")>-1;
