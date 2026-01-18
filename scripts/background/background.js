@@ -1,1 +1,0 @@
-importScripts(chrome.runtime.getURL("scripts/background/superAI.js")),importScripts(chrome.runtime.getURL("scripts/background/initialize.js")),importScripts(chrome.runtime.getURL("scripts/background/contextMenu.js"));

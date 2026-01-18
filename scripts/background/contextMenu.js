@@ -1,1 +1,43 @@
-chrome.contextMenus.onClicked.addListener(genericOnClick);let newChat=!0;async function checkHasPermission(t){return await chrome.permissions.contains({permissions:t})}async function askForPermisson(t){return await chrome.permissions.request({permissions:t})}async function removePermission(t){return await chrome.permissions.remove({permissions:t})}async function genericOnClick(t){if(t.menuItemId==="learnMore")chrome.tabs.create({url:"https://youtu.be/u3LSii5XOO8?si=nDvoFW-EyL--llfD"});else if(t.menuItemId==="newChat")newChat=!0;else if(t.menuItemId==="currentChat")newChat=!1;else if(t.menuItemId==="requestScreenshotPermission")await askForPermisson(["tabs","activeTab"])&&chrome.contextMenus.removeAll(()=>{addCustomPromptContextMenu()});else if(t.menuItemId==="takeScreenshot"){if(!await checkHasPermission(["tabs","activeTab"]))return;chrome.tabs.captureVisibleTab(null,{format:"png"},r=>{r&&chrome.tabs.query({url:"https://chatgpt.com/*"},o=>{const e=o[0];e?chrome.tabs.update(e.id,{active:!0}).then(()=>{chrome.tabs.sendMessage(e.id,{newChat,action:"insertScreenshot",screenshot:r})}):chrome.tabs.create({url:"https://chatgpt.com/"}).then(c=>{chrome.tabs.onUpdated.addListener(function s(a,i){a===c.id&&i.status==="complete"&&(setTimeout(()=>{chrome.tabs.sendMessage(c.id,{newChat,action:"insertScreenshot",screenshot:r})},3e3),chrome.tabs.onUpdated.removeListener(s))})})})})}else if(t.menuItemId==="sendImage"){const n=t.srcUrl;chrome.tabs.query({url:"https://chatgpt.com/*"},r=>{const o=r[0];o?chrome.tabs.update(o.id,{active:!0}).then(()=>{chrome.tabs.sendMessage(o.id,{newChat,action:"insertImage",imageUrl:n})}):chrome.tabs.create({url:"https://chatgpt.com/"}).then(e=>{chrome.tabs.onUpdated.addListener(function c(s,a){s===e.id&&a.status==="complete"&&(setTimeout(()=>{chrome.tabs.sendMessage(e.id,{newChat,action:"insertImage",imageUrl:n})},3e3),chrome.tabs.onUpdated.removeListener(c))})})})}else chrome.storage.sync.get(["hashAcessToken"],n=>{if(!n.hashAcessToken)return;const r=t.menuItemId.toString(),o={"Hat-Token":n.hashAcessToken};getPrompt(r,o).then(e=>{e&&chrome.tabs.query({url:"https://chatgpt.com/*"},c=>{const s=c[0];s?chrome.tabs.update(s.id,{active:!0}).then(()=>{chrome.tabs.sendMessage(s.id,{newChat,action:"insertPrompt",prompt:e,selectionText:t.selectionText})}):chrome.tabs.create({url:"https://chatgpt.com/"}).then(a=>{chrome.tabs.onUpdated.addListener(function i(h,d){h===a.id&&d.status==="complete"&&(setTimeout(()=>{chrome.tabs.sendMessage(a.id,{newChat,action:"insertPrompt",prompt:e,selectionText:t.selectionText})},3e3),chrome.tabs.onUpdated.removeListener(i))})})})})})}chrome.runtime.onInstalled.addListener(()=>{addCustomPromptContextMenu()});async function addCustomPromptContextMenu(){const t=await checkHasPermission(["tabs","activeTab"]);chrome.storage.sync.get(["hashAcessToken"],n=>{if(!n.hashAcessToken)return;const r={"Hat-Token":n.hashAcessToken};getAllFavoritePrompts(r).then(o=>{chrome.contextMenus.create({title:"Send Image to ChatGPT",contexts:["image"],id:"sendImage"});const e=chrome.contextMenus.create({title:"Superpower ChatGPT Pro",contexts:["page","selection"],id:"superpower"});chrome.contextMenus.create({title:"Select some text to see your prompts",contexts:["page"],parentId:e,id:"noSelection"}),chrome.contextMenus.create({title:"Send selected text to ChatGPT with prompt:",contexts:["selection"],parentId:e,id:"selection"}),chrome.contextMenus.create({id:"divider1",type:"separator",parentId:e}),o&&o.length>0&&o.sort((s,a)=>s.title-a.title).forEach(s=>{!s.id||!s.title||chrome.contextMenus.create({title:` \u279C ${s?.title?.substring(0,20)}${s?.title?.length>20?"...":""} - (${s?.steps?.length} ${s?.steps?.length>1?"steps":"step"})`,contexts:["selection"],parentId:e,id:s?.id?.toString()})}),chrome.contextMenus.create({id:"divider2",type:"separator",contexts:["page","selection"],parentId:e}),chrome.contextMenus.create({title:t?"Send Screenshot to ChatGPT":"Allow to Send Screenshot to ChatGPT",contexts:["page","selection"],parentId:e,id:t?"takeScreenshot":"requestScreenshotPermission"}),chrome.contextMenus.create({id:"divider3",type:"separator",contexts:["page","selection"],parentId:e});const c=chrome.contextMenus.create({title:"When send a prompt or screenshot to ChatGPT",contexts:["page","selection"],id:"newChatSettings",parentId:e});chrome.contextMenus.create({title:"Start a New Chat",contexts:["page","selection"],parentId:c,id:"newChat",type:"radio"}),chrome.contextMenus.create({title:"Continue Current Chat",contexts:["page","selection"],parentId:c,id:"currentChat",type:"radio"}),chrome.contextMenus.create({title:"Learn more \u279C",contexts:["page","selection"],parentId:e,id:"learnMore"})})})}
+// LocalGPT: Cleaned Context Menu
+// Removes auth checks to enable immediate functionality
+
+// Generic click handler
+function genericOnClick(info, tab) {
+  // Pass the context menu click to the content script
+  chrome.tabs.sendMessage(tab.id, {
+    type: "contextMenuClick",
+    menuItemId: info.menuItemId,
+    selectionText: info.selectionText
+  });
+}
+
+// Initialize Context Menus
+chrome.runtime.onInstalled.addListener(() => {
+  // Remove existing to avoid duplicates
+  chrome.contextMenus.removeAll(() => {
+    
+    // Parent Item
+    chrome.contextMenus.create({
+      id: "superpower-gpt",
+      title: "LocalGPT Actions",
+      contexts: ["selection"]
+    });
+
+    // Sub-items
+    chrome.contextMenus.create({
+      parentId: "superpower-gpt",
+      id: "save-to-notes",
+      title: "Save to Notes",
+      contexts: ["selection"]
+    });
+
+    chrome.contextMenus.create({
+      parentId: "superpower-gpt",
+      id: "run-custom-prompt",
+      title: "Run Custom Prompt",
+      contexts: ["selection"]
+    });
+  });
+});
+
+chrome.contextMenus.onClicked.addListener(genericOnClick);
